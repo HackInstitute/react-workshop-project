@@ -22,3 +22,13 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.navbar {
+  margin: 10px;
+  padding: 10px;
+  background-color: silver;
+}
+
+.navbar-active {
+  background-color: gold;
+}
