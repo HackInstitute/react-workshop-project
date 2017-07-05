@@ -7,9 +7,7 @@ import './App.css';
 
 class App extends Component {
   render() {
-    const {foo} = this.props
-    const {switchFoo} = this.props
-    
+    const {foo, switchFoo} = this.props
     return (
       <div className="App">
         <div className="App-header">
@@ -36,7 +34,7 @@ const mapDispatchToProps = dispatch => {
   return {
     switchFoo: function() {
       const action = {type: 'SWITCH_FOO'}
-      dispatch(action)
+      dispatch(switchFoo())
     }
   }
 }
