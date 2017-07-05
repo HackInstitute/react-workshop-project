@@ -3,3 +3,35 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+
+/** Button */
+.Button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px;
+  margin: 5px;
+  border-radius: 3px;
+  min-width: 30px;
+  
+  font-size: 20px;
+
+  background-color: gray;
+  color: #fff;
+  cursor: pointer;
+}
+.Button:hover {
+  background-color: silver;
+  box-shadow: 0 0 5px rgba(0,0,0,.5);
+}
+
+/** Grid */
+.BtnGrid {
+  display: flex;
+  flex-wrap: wrap;
+}
+  .BtnGrid > * {
+    flex-grow: 1;
+  }
